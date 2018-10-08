@@ -1,9 +1,13 @@
 # PCF-SpringBoot
 
 This respository has 3 projects specific to Pivotal Cloud Foundry
+
 SpringCloud MultidataSource connects to 2 datasource one RDBMS and other MongoDb
+
 SpringCloudPCFFeignServer which use PCF service discovery service .Please go through the pom.xml to look for PCF dependencies needed for Service Discovery.Note Springboot1.5 is used here. 
+
 Listed below are the dependencies eesential for service discovery in Cloud Foundry
+
 <dependency>
             <groupId>io.pivotal.spring.cloud</groupId>
             <artifactId>spring-cloud-services-starter-service-registry</artifactId>
