@@ -35,4 +35,5 @@ Listed below are the dependencies eesential for service discovery in Cloud Found
         </dependencies>
     </dependencyManagement>
 
+
 SpringCloudPCFFeignClient is PCF service discovery service and is consumer of services provided by SpringCloudPCFFeignServer .The service /notify/{user}(SpringCloudPCFFeignClient) calls service  /message/{user}(SpringCloudPCFFeignServer) to get list of messages for a user to show the notification messages
