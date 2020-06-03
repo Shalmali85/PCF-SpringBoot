@@ -25,6 +25,14 @@ public class NotificationController {
         List<Notification> notificationEntityList =  notificationService.getSubscription(user);
         return new ResponseEntity<>(notificationEntityList, HttpStatus.OK);
     }
+    
+    @RequestMapping(value="/notify/user/{user}/app",
+            method=RequestMethod.GET,
+            produces=MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Notification>> getUserNotificationDetail(@PathVariable("user")String user){
+        List<Notification> notificationEntityList =  notificationService.getSubscription(user);
+        return new ResponseEntity<>(notificationEntityList, HttpStatus.OK);
+    }
     @RequestMapping(value="/notify/all",
             method=RequestMethod.GET,
             produces=MediaType.APPLICATION_JSON_VALUE)
